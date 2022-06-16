@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+}
+
+#meme-text {
+  border: 2px solid black;
+  height: 500px;
+  width: 80%;
+}
+
+#meme-image {
+  background-size: auto;
+  height: 100%;
+}
+
+#texto-exibido {
+  color: red;
+  bottom: 10px;
+  font-size: 70px;
+}
