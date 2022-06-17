@@ -24,3 +24,25 @@ function showImage() {
 }
 
 memeInsert.addEventListener('change', showImage);
+
+// Requisito 6
+const fire = document.getElementById('fire');
+const water = document.getElementById('water');
+const earth = document.getElementById('earth');
+const memeContainer = document.getElementById('meme-image-container');
+
+function alteraBordaFire() {
+  memeContainer.style.border = '3px dashed rgb(255, 0, 0)';
+}
+
+function alteraBordaWater() {
+  memeContainer.style.border = '5px double rgb(0, 0, 255)';
+}
+
+function alteraBordaEarth() {
+  memeContainer.style.border = '6px groove rgb(0, 128, 0)';
+}
+
+fire.addEventListener('click', alteraBordaFire);
+water.addEventListener('click', alteraBordaWater);
+earth.addEventListener('click', alteraBordaEarth);
