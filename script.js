@@ -12,9 +12,15 @@ function inserirTexto() {
 
 input2.addEventListener('keyup', inserirTexto);
 
-// Requisito 2
-function showImage(event) {
-  memeImage.style.backgroundImage = `url(${URL.createObjectURL(event.target.files[0])})`;
+// Requisito 2 https://www.horadecodar.com.br/2020/05/20/javascript-preview-de-imagem-carregada-em-input-file/
+function showImage() {
+  if (this.files && this.files[0]) {
+    const file = new FileReader();
+    file.onload = (event) => {
+      memeImage.src = event.target.result;
+    };
+    file.readAsDataURL(this.files[0]);
+  }
 }
 
 memeInsert.addEventListener('change', showImage);
