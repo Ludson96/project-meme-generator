@@ -46,3 +46,30 @@ function alteraBordaEarth() {
 fire.addEventListener('click', alteraBordaFire);
 water.addEventListener('click', alteraBordaWater);
 earth.addEventListener('click', alteraBordaEarth);
+
+// Requisito 7
+const meme1 = document.getElementById('meme-1');
+const meme2 = document.getElementById('meme-2');
+const meme3 = document.getElementById('meme-3');
+const meme4 = document.getElementById('meme-4');
+
+function insertMeme1() {
+  memeImage.src = '/imgs/meme1.png';
+}
+
+function insertMeme2() {
+  memeImage.src = '/imgs/meme2.png';
+}
+
+function insertMeme3() {
+  memeImage.src = '/imgs/meme3.png';
+}
+
+function insertMeme4() {
+  memeImage.src = '/imgs/meme4.png';
+}
+
+meme1.addEventListener('click', insertMeme1);
+meme2.addEventListener('click', insertMeme2);
+meme3.addEventListener('click', insertMeme3);
+meme4.addEventListener('click', insertMeme4);

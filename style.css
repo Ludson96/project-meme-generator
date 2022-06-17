@@ -33,3 +33,8 @@
 #earth {
   background-color: green;
 }
+
+#meme-1 , #meme-2 , #meme-3 , #meme-4 {
+  width: 150px;
+  margin: 10px;
+}
